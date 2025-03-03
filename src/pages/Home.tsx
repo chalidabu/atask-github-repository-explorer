@@ -21,8 +21,8 @@ const Home = () => {
   };
 
   return (
-    <main>
-      <div className="container max-w-lg mx-auto py-4 shadow-lg min-h-screen">
+    <main className="font-body">
+      <div className="container max-w-lg mx-auto py-4 min-h-screen shadow-lg border border-gray-300">
         <h1 className="text-center font-bold text-2xl mb-2 font-heading border-b pb-2">Repositories Explorer</h1>
         <p className="text-center text-md text-gray-500 mb-6 md:mb-4">Find repositories from GitHub users</p>
         <Searchbar onSearch={handleSearch} />
