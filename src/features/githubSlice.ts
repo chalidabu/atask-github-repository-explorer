@@ -15,7 +15,7 @@ export const fetchRepos = createAsyncThunk('github/fetchRepos', async (username:
 
   return response.data.map((repo: any) => ({
     name: repo.name,
-    description: repo.descripttion,
+    description: repo.description,
     stargazers_count: repo.stargazers_count,
   })) 
 });
